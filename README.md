@@ -11,7 +11,7 @@
 个人在学习机器学习中的感受，老师讲课感觉还行，不是很难，等到自己实践时，只会敲一个Hello，Wolrd:cold_sweat:。
 
 ## 二、目前进度 :alarm_clock:
-- [线性回归完整代码](https://github.com/Coder-Liuu/machine-learning-examples/blob/main/LinearRegression.py): [个人笔记](https://coder-liuu.github.io/2021/03/ml-linearregression/)
+- [线性回归完整代码](https://github.com/crush598/MachineLearningNote/tree/main/LinearRegression): [个人笔记](https://coder-liuu.github.io/2021/03/ml-linearregression/)
 
 ## 三、鼓励和联系作者 :four_leaf_clover:
 
