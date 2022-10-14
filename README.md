@@ -14,6 +14,8 @@
 - [线性回归完整代码](https://github.com/crush598/MachineLearningNote/tree/main/LinearRegression): [个人笔记暂时占位]
 - [Logistic Regression 完整代码](https://github.com/crush598/MachineLearningNote/tree/main/LogisticRegression): [个人笔记暂时占位]
 - [Decision Tree 完整代码](https://github.com/crush598/MachineLearningNote/tree/main/DecisionTree): [个人笔记暂时占位--未掌握]
+- [Apriori 完整代码](https://github.com/crush598/MachineLearningNote/blob/main/Others/My_Priori.py)（数据挖掘相关）：[个人笔记暂时占位]
+- [FP_growth 完整代码](https://github.com/crush598/MachineLearningNote/blob/main/Others/My_FP_Growth.py) (数据挖掘相关)：[个人笔记暂时占位]
 ## 三、鼓励和联系作者 :four_leaf_clover:
 
 如果本项目对你有所帮助，想鼓励一下作者，记得给本项目加一颗星星:star:，并分享给你的朋友们喔:blush:!
