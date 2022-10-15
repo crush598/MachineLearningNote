@@ -11,8 +11,8 @@
 个人在学习机器学习中的感受，老师讲课感觉还行，不是很难，等到自己实践时，只会敲一个Hello，Wolrd:cold_sweat:。
 
 ## 二、目前进度 :alarm_clock:
-- [线性回归完整代码](https://github.com/crush598/MachineLearningNote/tree/main/LinearRegression): [个人笔记暂时占位]
-- [Logistic Regression 完整代码](https://github.com/crush598/MachineLearningNote/tree/main/LogisticRegression): [个人笔记暂时占位]
+- [线性回归完整代码](https://github.com/crush598/MachineLearningNote/tree/main/LinearRegression): [个人笔记](https://crush598.github.io/Hush-notes/pages/036368)
+- [Logistic Regression 完整代码](https://github.com/crush598/MachineLearningNote/tree/main/LogisticRegression): [个人笔记](https://crush598.github.io/Hush-notes/pages/ba793c/)
 - [Decision Tree 完整代码](https://github.com/crush598/MachineLearningNote/tree/main/DecisionTree): [个人笔记暂时占位--未掌握]
 - [Apriori 完整代码](https://github.com/crush598/MachineLearningNote/blob/main/Others/My_Priori.py)（数据挖掘相关）：[个人笔记暂时占位]
 - [FP_growth 完整代码](https://github.com/crush598/MachineLearningNote/blob/main/Others/My_FP_Growth.py) (数据挖掘相关)：[个人笔记暂时占位]
