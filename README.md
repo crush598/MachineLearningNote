@@ -4,6 +4,8 @@
 
 ![Platform](https://img.shields.io/badge/platform-windows%20|%20linux%20|%20macos-green.svg)
 
+[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/crush598/MachineLearningNote)
+
 ## 一、项目风格 :watermelon:
 
 手写机器学习的算法，以`简单和简洁`为标准，此开源项目中的个个算法之间尽量保证独立性，帮助初学者快速根据原理实现 Machine Learning 中的算法。
