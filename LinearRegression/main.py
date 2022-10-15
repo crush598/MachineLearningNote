@@ -4,6 +4,7 @@
 # @Email   : crush@tju.edu.cn
 import numpy as np
 import LinearRegression as LR
+import matplotlib.pyplot as plt
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
@@ -17,9 +18,8 @@ def data_process():
 
     X, y = data.iloc[1:, :-1].values, data.iloc[1:, -1].values  # ## 获取数据的从1到最后一行，从0到倒数第2列
     # print(X.describe(), y.describe())
-
     # for i in range(len(column_header)):
-    #     plt.scatter(x_train[:,i],y_train,s=20)
+    #     plt.scatter(X[:,i],y,s=20)
     #     plt.title(column_header[i])
     #     plt.show()
     ## 选择RM 和 LSTAT
@@ -30,30 +30,25 @@ def data_process():
     return x_train, x_test, y_train, y_test
 
 
-def AllNorm_2(X):  # 均值归一化
+def AllNorm_3(X):  # 基于均值和标准差
     m = X.shape[0]
 
-    minVals = np.min(X, axis=0)
-    # print(minVals)
-    maxVals = np.max(X, axis=0)
-    # print(maxVals)
-    # mean_vals = np.mean(X,axis=0)
+    mean_vals = np.mean(X)
     std_vals = np.std(X)
-    ranges = maxVals - minVals
-    # normDataSet = np.zeros(np.shape(X))
+    normDataSet = np.zeros(np.shape(X))
     # print(normDataSet.shape)
 
-    normDataSet = X - np.tile(std_vals, (m, 1))  # 在行方向重复minVals m次和列方向上重复minVals 1次
-    normDataSet = normDataSet / np.tile(ranges, (m, 1))
+    normDataSet = X - np.tile(mean_vals, (m, 1))  # 在行方向重复minVals m次和列方向上重复minVals 1次
+    normDataSet = normDataSet / np.tile(std_vals, (m, 1))
     return normDataSet
 
 
 if __name__ == "__main__":
     x_train, x_test, y_train, y_test = data_process()
-    epochs = 500
+    epochs = 1000
     ## 使用归一化效果
-    train_X = AllNorm_2(x_train)
-    test_X = AllNorm_2(x_test)
+    train_X = AllNorm_3(x_train)
+    test_X = AllNorm_3(x_test)
 
     LinearRegression = LR.LinearRegression(train_X, test_X)
     loss_record, acc_record, acc_test_record = LinearRegression.fit(LinearRegression.train_X, y_train, LinearRegression.test_X, y_test, epochs)
