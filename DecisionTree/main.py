@@ -3,10 +3,9 @@
 # @Author  : Hush
 # @Email   : crush@tju.edu.cn
 
-import numpy as np
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
-import ID3 as DecisionTree
+import binary_tree as DecisionTree
 
 
 def data_process():
@@ -27,9 +26,6 @@ def data_process():
     return x_train, x_test, y_train, y_test, feature_names
 
 
-def get_accuracy(y_true, y_pred):
-    acc = len(np.where(y_true == y_pred)[0]) / len(y_true) * 100
-    return acc
 
 
 if __name__ == "__main__":
@@ -41,8 +37,8 @@ if __name__ == "__main__":
 
     dt = DecisionTree.DecisionTree(features=features, max_depth=best_max_depth, min_samples_split=best_min_samples_split)
     dt.fit(x_train, y_train)
-    y_pred = dt.predict(x_test)
-    acc = get_accuracy(y_test, y_pred)
+    acc = dt.predict(x_test,y_test)
+
 
     print(f"Best max_depth: {best_max_depth}, best min_samples_split: {best_min_samples_split}")
     print(f"Best validation set accuracy: {acc}")
