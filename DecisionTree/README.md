@@ -6,8 +6,10 @@
 
 ## 数据集
 
-- 采用 sklearn 自带的乳腺癌数据集进行分类任务分析（二叉树模型）
+- 采用 sklearn 自带的乳腺癌数据集进行二分类任务分析（二分类模型）
+- 采用 sklearn 自带的葡萄酒数据集进行多分类任务分析（多分类模型）
 
 ## 效果
 
-- ![效果](https://github.com/crush598/MachineLearningNote/blob/main/DecisionTree/binary_tree.png?raw=true)
+- ![效果一](https://github.com/crush598/MachineLearningNote/blob/main/DecisionTree/binary_tree.png?raw=true)
+- ![效果二](https://github.com/crush598/MachineLearningNote/blob/main/DecisionTree/Multiclass.png?raw=true)
