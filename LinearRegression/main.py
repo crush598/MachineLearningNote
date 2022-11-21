@@ -45,7 +45,7 @@ def AllNorm_3(X):  # 基于均值和标准差
 
 if __name__ == "__main__":
     x_train, x_test, y_train, y_test = data_process()
-    epochs = 1000
+    epochs = 500
     ## 使用归一化效果
     train_X = AllNorm_3(x_train)
     test_X = AllNorm_3(x_test)
